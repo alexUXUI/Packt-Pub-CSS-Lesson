@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fluid Layout with Responsive Images</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <!-- navigation -->
+    <nav>
+      <a href="/" class="link-item">Link One</a>
+      <a href="/" class="link-item">Link Two</a>
+      <a href="/" class="link-item">Link Three</a>
+      <a href="/" class="link-item">Link Four</a>
+    </nav>
+
+    <!-- main content -->
+    <main>
+      <img
+        srcset="http://via.placeholder.com/300x150 450w, http://via.placeholder.com/500x500 900w"
+        sizes="(min-width: 7em) 100vw, (min-width: 40em) 100vw"
+        src="http://via.placeholder.com/300x350"
+        alt="placeholder image"
+      />
+      <!--
+
+      Another way to accomplish dynamic images. Try this out for fun.
+
+      <picture>
+        <source media="(min-width:30em)" srcset="http://via.placeholder.com/150x150">
+        <source media="(min-width:60em)" srcset="http://via.placeholder.com/550x150">
+        <img src="http://via.placeholder.com/300x150" alt="placeholder image">
+      </picture>
+      -->
+    </main>
+
+    <!-- 3 blocks 'feature set' -->
+    <div class="feature-set">
+      <div class='feature feature-1'>1</div>
+      <div class='feature feature-2'>2</div>
+      <div class='feature feature-3'>3</div>
+    </div>
+
+    <!-- footer -->
+    <footer>footer</footer>
+  </body>
+</html>
